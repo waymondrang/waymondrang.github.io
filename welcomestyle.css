@@ -25,7 +25,7 @@ a {
   background-color: white;
   color: black;
   font-family: helveticanow, Arial, Helvetica, sans-serif;
-  display: flex;
+  display: flex; /*if broken set to flex*/
   justify-content: center;
   align-items: center;
 }
@@ -53,7 +53,6 @@ body {
 }
 
 #name-container {
-  // display: flex;
   color: white;
   font-size: 6vmin;
   letter-spacing: 0.25vmin;
@@ -112,54 +111,4 @@ nav h2:hover {
   height: auto;
   fill: #373737;
   transition: all 0.1s ease-in-out;
-}
-
-.more {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
-  bottom: 4vmin;
-  left: 4vmin;
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-  font-size: 2vmin;
-  color: #373737;
-}
-
-.more h3 {
-  margin: 0 0 0 1vmin; /* use when svg is displayed */
-}
-
-.more svg {
-  display: none; /* the icon doesnt look nice... again */
-  width: 2vmin;
-  height: auto;
-  fill: #373737;
-  transition: all 0.25s ease-in-out;
-}
-
-.more-section {
-  height: 100vh; /* height fallback */
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
-  background-color: white;
-  transition: transform 1s cubic-bezier(.8,0,.2,1);
-}
-
-.close {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  top: 4vmin;
-  left: 4vmin;
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-  font-size: 2vmin;
-  color: #373737;
-}
-
-.close h3 {
-  margin: 0;
 }

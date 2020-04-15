@@ -179,7 +179,7 @@ $("span").click(function () {
   $(this).css("color", randomColor);
 });
 
-// bottom elements hover event handler
+// bottom elements hover event handler (i refuse to use css hover)
 
 $(".hover").hover(function () {
   type = this.nodeName;
@@ -204,21 +204,6 @@ $(".hover").hover(function () {
 });
 
 // more info section event handler
-
-$(".more").click(function() {
-  var transform = "translateY(" + (window.innerHeight * -0.2) + "px)";
-  $(".more-section").css("transform", transform);
-});
-
-window.addEventListener('resize', () => {
-  var transform = "translateY(" + (window.innerHeight * -0.2) + "px)";
-  $(".more-section").css("transform", transform);
-});
-
-$(".close").click(function() {
-  var transform = "translateY(0px)";
-  $(".more-section").css("transform", transform);
-});
 
 function surprise() {
   console.log("surprise!");
