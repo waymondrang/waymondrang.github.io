@@ -1,0 +1,122 @@
+@font-face {
+  font-family: helveticanow;
+  src: url(assets/fonts/helveticanowblack.otf);
+}
+
+.loader {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-color: transparent;
+  font-family: helveticanow, Arial, Helvetica, sans-serif;
+  color: white;
+  background: white;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  height: 100vh; /* height fallback */
+  height: calc(var(--vh, 1vh) * 100);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F67AC1;
+  /*background-image: url(https://lh3.googleusercontent.com/dA4afqLVd-jafKh_1FzyXLmlH7elytqC2j7Ts1KQJtBSqmuZHtpm3idazz-i2UcZMUgotP_sNY63tY9GopXFIj9ZDdVjEXysYKz534fn_HPiYiv4FfBQaS_3n0jqZyTFjT4Jd9THD9s9XxEgH6mwzc2xCYDl0kuEEa7FbuwR_nQSe2cNoY1XkkLMk-fmisayCHze7_rFbQisqATDzZIwjbQx80_rB1DqYjrFw2xgwOpQSnTTNOJzkVZr_2fswgsh9Ib7_zsm4QejK4egmX5K0ZrOLl8ozCQ3Z92SV1BuICn8p3Cv3Syf87R-F2hK8EMzf2Ysu3UAkd0xk4jhbmAXJSVfsMYeCGzdxDH-UPqmMgIwNaUYi-5yduiCFrsiGtTCRt97YIoAAOWP5THr_8uc37uOWMvL35ishZcwnW98q-pqh8-OSw6UltsJuxYbIwnLtUNmqXkf2f3lflUpl00qCJ8fCP1XJhg-cEsZR054lvhh8Lb2hcMe9NknA7nr8FOiJ0mSmvLw58jVk0GV3vKNX5BNcb7Pt8qLtKE4jdaDd_dV2vokrqFwQwE7pPucQcgQ5BdSvkxWWz8GWRueqnNSroIINzFoNop41kNfpsIrq_bTtEPx8GTd99cW3B6uMyqL-HBBWpkemQiN2BR5924bpneGgRLNB7S1znIw0LQdk10Momi05TB8S1q9RH9J=w883-h589-no);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.name {
+}
+
+.name h1 {
+  text-align: center;
+  font-size: 8vmin;
+  color: white;
+  opacity: 1;
+  transition: all 0.25s ease-in-out;
+}
+
+.info-container {
+  height: 40%;  
+  width: 20vw;  /* width fallback */
+  width: var(--initialWidth);
+}
+
+.mograph-card {
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  left: 0px;
+  top: 5vh;
+  background-color: #C1Cd97;
+}
+
+.mograph-card a {
+  position: absolute;
+  display: none;
+  width: var(--finalWidth);
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  font-size: 6vmin;
+}
+
+.film-card {
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  left: 0px;
+  bottom: 5vh;
+  background-color: #F0AE5E;
+}
+
+.music-card {
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 0px;
+  bottom: 5vh;
+  background-color: #70AE98;
+}
+
+.about-card {
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 0px;
+  top: 5vh;
+  background-color: #5E96AE;
+}
+
+
+/* applies to all links in each card
+.info-container a {
+  display: none;
+  width: var(--finalWidth);
+  height: 100%;
+  /* debugging purposes
+  //background-color: white;
+}*/

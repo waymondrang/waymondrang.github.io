@@ -1,0 +1,165 @@
+@font-face {
+  font-family: helveticanow;
+  src: url(assets/fonts/helveticanowblack.otf);
+}
+
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.loader {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: helveticanow, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-color: transparent;
+  font-family: 'Major Mono Display', monospace;
+  color: white;
+  background: black;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh; /* height fallback */
+  height: calc(var(--vh, 1vh) * 100);
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+}
+
+#name-container {
+  // display: flex;
+  color: white;
+  font-size: 6vmin;
+  letter-spacing: 0.25vmin;
+  cursor: default;
+  color: yellow;
+  /* apply transform property via js */
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  /* transform: translateY(-40px); */
+}
+
+.debugMenu {
+  display: none;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2vmin;
+  color: #ffffff;
+}
+
+nav h2 {
+  margin: 1vmin;
+}
+
+nav h2:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.refresh {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 4vmin;
+  right: 4vmin;
+  cursor: pointer;
+  font-size: 2vmin;
+  color: #373737;
+  transition: all 0.1s ease-in-out;
+}
+
+.refresh h3 {
+  margin: 0 1vmin 0 0; /* use when svg is displayed */
+}
+
+.refresh svg {
+  display: none; /* the icon doesnt please my eye */
+  width: 3vmin;
+  height: auto;
+  fill: #373737;
+  transition: all 0.1s ease-in-out;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 4vmin;
+  left: 4vmin;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-size: 2vmin;
+  color: #373737;
+}
+
+.more h3 {
+  margin: 0 0 0 1vmin; /* use when svg is displayed */
+}
+
+.more svg {
+  display: none; /* the icon doesnt look nice... again */
+  width: 2vmin;
+  height: auto;
+  fill: #373737;
+  transition: all 0.25s ease-in-out;
+}
+
+.more-section {
+  height: 100vh; /* height fallback */
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  background-color: white;
+  transition: transform 1s cubic-bezier(.8,0,.2,1);
+}
+
+.close {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 4vmin;
+  left: 4vmin;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-size: 2vmin;
+  color: #373737;
+}
+
+.close h3 {
+  margin: 0;
+}

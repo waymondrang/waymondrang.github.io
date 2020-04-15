@@ -1,0 +1,227 @@
+@font-face {
+  font-family: helveticanow;
+  src: url(assets/fonts/helveticanowblack.otf);
+}
+
+body {
+  font-family: helveticanow, Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.loader {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-splash {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #9dab86;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-color: red*/
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 8vw;
+  margin: 0;
+  padding: 0;
+  /*background-color: green;*/
+  line-height: 10vw;
+}
+
+.title h2 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  color: #b0deff;
+}
+
+.wave-cage {
+  position: absolute;
+  border: 1px solid black;
+  //width: inherit;
+  max-width: 100%;
+  bottom: 0px;
+}
+
+#wave {
+  position: relative;
+  bottom: 0px;
+  width: inherit;
+  //border: 1px solid black;
+}
+
+.spotify {
+  display: flex;
+  height: 100vh;
+  width: inherit;
+  background-color: #e6a157;
+  justify-content: center;
+  align-items: center;
+}
+
+.soundcloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9753d;
+  height: 100vh;
+  width: inherit;
+}
+
+iframe {
+  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+  transition: all .5s cubic-bezier(0,0,.2,1);
+}
+
+iframe:hover {
+  width: 81%;
+  height: 81%;
+}
+
+.more-info {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb8242;
+  overflow: hidden;
+  position: relative;
+}
+
+.cover-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  height: inherit;
+  /*background-color: green;*/
+}
+
+#home-studio-art {
+  width: 80%;
+  border-radius: 10px;
+  transition: all .5s cubic-bezier(0,0,.2,1);
+  cursor: pointer;
+}
+
+#home-studio-art:hover {
+  width: 82.5%;
+}
+
+.album-info {
+  padding: 10px;
+  width: 50%;
+  height: inherit;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  /*background-color: yellow;*/
+}
+
+.album-info .platforms-card {
+  position: absolute;
+  transform: translateY(40vh);
+  width: 40vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.album-info .platforms-card p {
+  font-size: 12px;
+}
+
+.album-info .album-title {
+  color: #b0deff;
+}
+
+.album-info p {
+  color: #fff;
+  font-size: 4vw;
+}
+
+.album-info p date {
+  color: #b0deff;
+  transition: all .5s;
+}
+
+.all-platforms {
+  color: #b0deff;
+  transition: all .5s;
+}
+
+#arrow-cage {
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+
+  //border: 1px solid black;
+
+}
+
+#arrow {
+  display: flex;
+  opacity: 0;
+  position: relative;
+  bottom: 2vh;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s cubic-bezier(0,0,.01,1);
+  animation: drift 4s cubic-bezier(.8,0,.2,1) infinite;
+
+  stroke-linejoin: round;
+
+  //border: 1px solid black;
+
+}
+
+@keyframes drift {
+  0% {
+    bottom: 2vh;
+  }
+  50% {
+    bottom: 4vh;
+  }
+  100% {
+    bottom: 2vh;
+  }
+}
+
+#hidden-section {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-image: url('assets/img/clouds.jpg');
+  background-size: auto;
+  color: white;
+  height: 100vh;
+  background-color: black;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: helveticanow;
+  src: url(assets/fonts/helveticanowblack.otf);
+}
+
+.loader {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: helveticanow, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
