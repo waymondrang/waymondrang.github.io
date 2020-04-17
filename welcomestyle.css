@@ -25,7 +25,7 @@ a {
   background-color: white;
   color: black;
   font-family: helveticanow, Arial, Helvetica, sans-serif;
-  display: flex; /*if broken set to flex*/
+  display: flex; /*let fonts load*/
   justify-content: center;
   align-items: center;
 }

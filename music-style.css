@@ -62,7 +62,7 @@ body {
 .wave-cage {
   position: absolute;
   border: 1px solid black;
-  //width: inherit;
+  /*width: inherit;*/
   max-width: 100%;
   bottom: 0px;
 }
@@ -71,7 +71,7 @@ body {
   position: relative;
   bottom: 0px;
   width: inherit;
-  //border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .spotify {
@@ -182,9 +182,7 @@ iframe:hover {
   width: 50px;
   position: absolute;
   bottom: 0;
-
-  //border: 1px solid black;
-
+  /*border: 1px solid black;*/
 }
 
 #arrow {
@@ -196,11 +194,8 @@ iframe:hover {
   align-items: center;
   transition: opacity 1s cubic-bezier(0,0,.01,1);
   animation: drift 4s cubic-bezier(.8,0,.2,1) infinite;
-
   stroke-linejoin: round;
-
-  //border: 1px solid black;
-
+  /*border: 1px solid black;*/
 }
 
 @keyframes drift {
