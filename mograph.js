@@ -4,11 +4,6 @@ $(window).on("load",function(){
     $(".loader").fadeOut("slow");
 });
 
-$(".thumbnail").click( function() {
-    this.textContent = "";
-});
-
-
 var titleRect = document.querySelector(".message-title").getBoundingClientRect();
 console.log(titleRect.top);
 console.log(window.innerHeight);
@@ -20,14 +15,33 @@ console.log(transY);
 document.querySelector(".message-title").style.transform = transY;
 
 let vh = window.innerHeight * 0.01;
+let vw = window.innerWidth * 0.01;
+if (window.innerWidth > window.innerHeight) {
+    vmax = window.innerWidth * 0.01;
+} else {
+    vmax = window.innerHeight * 0.01;
+};
+
 // set --vh value to pixels
+document.documentElement.style.setProperty('--vmax', `${vmax}px`);
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+document.documentElement.style.setProperty('--vw', `${vw}px`);
 
 // if window is resized, recalulate --vh value
 window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
+    let vw = window.innerWidth * 0.01;
+    if (window.innerWidth > window.innerHeight) {
+        vmax = window.innerWidth * 0.01;
+    } else {
+        vmax = window.innerHeight * 0.01;
+    };
     console.log(vh);
+    console.log(vw);
+    console.log(vmax);
+    document.documentElement.style.setProperty('--vmax', `${vmax}px`);
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    document.documentElement.style.setProperty('--vw', `${vw}px`);
 });
 
 // title animation start
@@ -75,7 +89,7 @@ function animateTitle() {
         delay: 3000,
         update: function() {
             if (enterButtonLoad == 0) {
-                if (update >= 200) {
+                if (update >= 100) {
                     enterButtonLoad = 1;
                     console.log(update);
                 } else {
@@ -83,13 +97,19 @@ function animateTitle() {
                 };
             }
         }
-    });
-    
+    }); 
 };
 
 function enterPage() {
     if (enterButtonLoad == 1) {
-    $(".welcome").fadeOut("slow");
+    $(".welcome").fadeOut("fast");
+    a = document.querySelector(".a div")
+    anime({
+        targets: a,
+        width: '100%',
+        easing: 'cubicBezier(0,.5,0,1)',
+        delay: 500
+    });
     };
 }
 
