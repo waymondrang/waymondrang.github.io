@@ -103,13 +103,16 @@ function animateTitle() {
 function enterPage() {
     if (enterButtonLoad == 1) {
     $(".welcome").fadeOut("fast");
-    a = document.querySelector(".a div")
+
+    // complicated fancy animation
+
+    /* a = document.querySelector(".a div")
     anime({
         targets: a,
         width: '100%',
         easing: 'cubicBezier(0,.5,0,1)',
         delay: 500
-    });
+    }); */
     };
 }
 
