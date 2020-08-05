@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.loader {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffff00;
+}
+
+.welcome {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+#title-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-title {
+    font-size: 200%;
+    opacity: 0;
+    color: yellow;
+    margin: 0;
+}
+
+.description-container {
+    width: 50vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.page-description {
+    opacity: 0;
+}
+
+.enter {
+    opacity: 0;
+    width: 20vmin;
+    height: auto;
+    margin: 0.5em;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: 'Gotu', sans-serif;
+    transition: border .25s, color .25s;
+}
+
+.enter:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+    height: 100vh;
+    /* height fallback */
+    height: calc(var(--vh, 1vh) * 100);
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.thumbnail {
+    color: #fff;
+    font-size: 150%;
+    height: 50vh;
+    min-height: 480px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: none;
+}
+
+.arrow {
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff9a;
+    opacity: 0.8;
+    position: absolute;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #ffffffda;
+    opacity: 1;
+}
+
+.arrow.right {
+    right: 24px;
+}
+
+.arrow.left {
+    left: 24px;
+}
+
+.card-info {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    padding: 12px 36px;
+    position: absolute;
+    transition: all 0.25s ease-in-out;
+}
+
+.learn-more {
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #ffffff;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 30px;
+    margin: 6px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.card-description {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.a {
+    background-color: #ffffff;
+    background-image: url('./TRILLION.png');
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.a video {
+    object-fit: cover;
+}
+
+.b {
+    background-color: #2e7d32;
+}
+
+
+.b .learn-more {
+    background-color: #60ad5e;
+}
+
+.c {
+    background-color: #c62828;
+}
+
+.c .learn-more {
+    background-color: #ff5f52;
+}
+
+.d {
+    background-color: #ff8364;
+    background-image: url('./MENTAL\ HEALTH.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.e {
+    background-color: #616f39;
+    background-image: url('./MOGRPAH\ REEL\ GLITCH.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.f {
+    background-color: #1565c0;
+}
+
+.f .learn-more {
+    background-color: #5e91f2;
+}
+
+.g {
+    background-color: #8e24aa;
+}
+
+.g .learn-more {
+    background-color: #c158dc;
+}
+
+.h {
+    background-color: #b5cfd8;
+    background-image: url('./SKULLS.png');
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.i {
+    background-color: #6c737e;
+    background-image: url('./KINGS\'\ AISLE\ LIGHTNING.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.j {
+    background-color: #f4511e;
+}
+
+.j .learn-more {
+    background-color: #ff844c;
+}
+
+.k {
+    background-color: #2196f3;
+}
+
+.k .learn-more {
+    background-color: #6ec6ff;
+    color: #000000;
+}
+
+.l {
+    background-color: #494949;
+    background-image: url('./FIRE\ BACKGROUND.jpg');
+    background-size: cover;
+    background-position: center;
+}

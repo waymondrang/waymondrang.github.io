@@ -91,58 +91,104 @@ body {
     grid-template-rows: repeat(10, 25vmax); /*grid row fallback*/
     grid-template-rows: repeat(4, calc(var(--vmax, 1vmax) * 25));
     grid-template-columns: repeat(10, 25vmax); /*grid column fallback*/
-    grid-template-columns: repeat(4, calc(var(--vmax, 1vmax) * 25));
+    grid-template-columns: repeat(4, calc(1vw * 25));
+    cursor: grab;
+    overflow: auto;
 }
 
 .thumbnail {
     display: flex;
     color: #fff;
     font-size: 150%;
+    border: 1px dotted black;
 }
 
-.a {
+.card-info {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000c5;
+    border-radius: 6px;
+    padding: 12px 24px;
+    min-height: 240px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 6px 0;
+}
+
+.card-description {
+    font-size: 18px;
+}
+
+.thumbnail.a {
+    background-color: #e8ecf1;
     grid-row: 1 / 3;
     grid-column: 1 / 3;
+    background-image: url('./CHAIN\ PAPER.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.a {
-    background-color: #e8ecf1;
+.thumbnail.a:hover .a.card-info {
+    opacity: 1;
 }
 
-.b {
+.thumbnail.b {
     background-color: #ffd98e;
+    background-image: url('./PODIUM.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .c {
     background-color: #ffb677;
+    background-image: url('./73.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .d {
     background-color: #ff8364;
+    background-image: url('./STATES.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .e {
     background-color: #616f39;
-}
-
-.l {
-    background-color: #7393a7;
+    background-image: url('./ROBOT\ ARM\ FOLDER.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .g {
+    background-color: #7393a7;
+    background-image: url('./MENTAL\ HEALTH.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.h {
     background-color: #b5cfd8;
 }
 
-.m {
+.f {
     grid-row: 3 / 5;
     grid-column: 3 / 5;
     background-color: #ffd3b6;
 }
 
-.h {
+.i {
     background-color: #6c737e;
 }
 
-.i {
+.j {
     background-color: #f5b971;
 }

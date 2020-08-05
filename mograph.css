@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 24px;
+}
+
+.header-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.back {
+    margin: 8px 0;
+    padding: 6px 10px;
+    background-color: #0000002a;
+    border-radius: 4px;
+    color: #000000;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: #0000003a;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 48px;
+    color: #000000;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    margin: 12px 0;
+    font-size: 38px;
+}
+
+h1:hover {
+    color: #60ad5e;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.slideshow-container {
+    max-height: 480px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+@media (min-width: 1200px) {
+    .slideshow-container {
+        border-radius: 6px;
+    }
+}
+
+.slideshow-image {
+    width: 100%;
+}
+
+/* Hide the images by default */
+.slideshow-slide {
+    display: none;
+}
+
+.slideshow-container:hover .arrow {
+    opacity: 0.8;
+}
+
+.arrow {
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff9a;
+    opacity: 0.4;
+    position: absolute;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #ffffffda;
+    opacity: 1;
+}
+
+.arrow.right {
+    right: 24px;
+}
+
+.arrow.left {
+    left: 24px;
+}
+
+/* Caption text */
+.text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #f2f2f2;
+    padding: 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #ffffff;
+    background-color: #ffffff10;
+    border-radius: 0 0 12px 0;
+    font-size: 12px;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+}
+
+.more {
+    padding: 24px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.about-container {
+    max-width: 800px;
+}
+
+.about-container p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.awards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.award {
+    padding: 6px 24px 24px 24px;
+    margin: 12px 24px 12px 0;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Playfair Display', serif;
+    z-index: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.award-title {
+    font-weight: 500;
+    font-size: 32px;
+    z-index: 1;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+.award-description {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+#natas {
+    color: #5e35b1;
+    cursor: pointer;
+}
+
+#natas:hover {
+    color: #9162e4;
+}
+
+.award svg {
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    z-index: -1;
+}
+
+.gold .award-title {
+    /*border: 2px solid #ffa000;*/
+}
+
+.gold .medal {
+    fill: #ffa000;
+}
+
+.silver {
+    /*border: 2px solid #9e9e9e;*/
+}
+
+.silver .medal {
+    fill: #9e9e9e;
+}
+
+.credits {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.credit {
+    margin: 12px 0;
+    height: min-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+    width: 50%;
+}
+
+.credit-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 0;
+    font-weight: 100;
+}
+
+.credit-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+}
