@@ -8,7 +8,7 @@ a {
 }
 
 .header {
-    padding: 24px;
+    padding: 24px 24px 12px 24px;
 }
 
 .header-container {
@@ -167,7 +167,7 @@ p {
 
 .award {
     padding: 6px 24px 24px 24px;
-    margin: 12px 24px 12px 0;
+    margin: 12px 48px 12px 0;
     width: 240px;
     display: flex;
     flex-direction: column;
@@ -202,8 +202,8 @@ p {
 
 .award svg {
     position: absolute;
-    top: -14px;
-    left: -14px;
+    top: -18px;
+    left: -24px;
     z-index: -1;
 }
 
@@ -212,7 +212,7 @@ p {
 }
 
 .gold .medal {
-    fill: #ffa000;
+    fill: #fdd835;
 }
 
 .silver {
@@ -228,7 +228,6 @@ p {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .credit {
@@ -246,10 +245,17 @@ p {
     font-size: 28px;
     margin: 0;
     font-weight: 100;
+    width: fit-content;
 }
 
 .credit-title {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 500;
+}
+
+.self {
+    padding: 4px 8px;
+    background-color: #fdd835;
+    border-radius: 4px;
 }
