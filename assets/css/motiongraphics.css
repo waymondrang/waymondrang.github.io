@@ -170,7 +170,7 @@ a:hover {
 
 .a {
     background-color: #ffffff;
-    background-image: url('./TRILLION.png');
+    background-image: url('/assets/img/TRILLION.png');
     background-size: cover;
     background-position: center;
     max-height: 100%;
@@ -201,14 +201,14 @@ a:hover {
 
 .d {
     background-color: #ff8364;
-    background-image: url('./MENTAL\ HEALTH.png');
+    background-image: url('/assets/img/MENTAL\ HEALTH.png');
     background-size: cover;
     background-position: center;
 }
 
 .e {
     background-color: #616f39;
-    background-image: url('./MOGRPAH\ REEL\ GLITCH.png');
+    background-image: url('/assets/img/MOGRPAH\ REEL\ GLITCH.png');
     background-size: cover;
     background-position: center;
 }
@@ -231,7 +231,7 @@ a:hover {
 
 .h {
     background-color: #b5cfd8;
-    background-image: url('./SKULLS.png');
+    background-image: url('/assets/img/SKULLS.png');
     background-size: cover;
     background-position: center;
     max-height: 100%;
@@ -241,7 +241,7 @@ a:hover {
 
 .i {
     background-color: #6c737e;
-    background-image: url('./KINGS\'\ AISLE\ LIGHTNING.png');
+    background-image: url('/assets/img/KINGS\'\ AISLE\ LIGHTNING.png');
     background-size: cover;
     background-position: center;
 }
@@ -265,7 +265,7 @@ a:hover {
 
 .l {
     background-color: #494949;
-    background-image: url('./FIRE\ BACKGROUND.jpg');
+    background-image: url('/assets/img/FIRE\ BACKGROUND.jpg');
     background-size: cover;
     background-position: center;
 }

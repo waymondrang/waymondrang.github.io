@@ -1,7 +1,3 @@
-$(window).on("load", function () {
-  $(".loader").fadeOut("slow");
-});
-
 const arrow = document.getElementById("arrow");
 var elem = document.getElementById("hidden-section");
 

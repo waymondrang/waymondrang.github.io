@@ -1,6 +1,6 @@
 @font-face {
   font-family: helveticanow;
-  src: url(assets/fonts/helveticanowblack.otf);
+  src: url(/assets/fonts/helveticanowblack.otf);
 }
 
 body {
@@ -96,12 +96,6 @@ iframe {
   border-radius: 10px;
   height: 80%;
   width: 80%;
-  transition: all .5s cubic-bezier(0,0,.2,1);
-}
-
-iframe:hover {
-  width: 81%;
-  height: 81%;
 }
 
 .more-info {

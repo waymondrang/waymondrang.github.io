@@ -1,6 +1,6 @@
 @font-face {
   font-family: helveticanow;
-  src: url(assets/fonts/helveticanowblack.otf);
+  src: url(/assets/fonts/helveticanowblack.otf);
 }
 
 .loader {
