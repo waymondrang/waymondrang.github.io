@@ -1,6 +1,31 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+    }
+}
+
+.circular-text {
+    font-size: 10px;
+    position: absolute;
+    bottom: 78px;
+    left: 40px;
+    color: #cecece;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
 }
 
 .back {
@@ -13,7 +38,7 @@ body {
 }
 
 .container {
-    padding: 24px 48px;
+    margin: 24px 48px;
     max-width: 1000px;
 }
 
@@ -23,6 +48,20 @@ body {
 
 .header {
     margin-bottom: 24px;
+    position: relative;
+}
+
+.footer {
+    margin-bottom: 24px;
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.footer span {
+    font-size: 12px;
+    margin-left: 84px;
 }
 
 .header h1 {
@@ -38,9 +77,11 @@ body {
 }
 
 .project-container {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-flow: wrap;
 }
 
 .project-label {

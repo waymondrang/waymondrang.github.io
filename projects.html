@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- hello, wanderer! i hope you have a wonderful day! :) -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,25 +20,29 @@
             <span class="last-updated">last updated 12-13-2020 (none of the links work yet)</span>
         </div>
         <div class="project-container">
-            <div class="project-card">
-                <span class="project-label">programming</span>
-                <h4>very cool uno</h4>
-                <div class="project-body">
-                    <p>
-                        players get to create custom rooms, play with the classic uno deck, draw cards from the deck,
-                        use
-                        cards,
-                        and
-                        withdraw cards from the pile. there is a turn indicator, dark mode option, and admin mode for
-                        the
-                        user
-                        who
-                        created the room.
-                    </p>
-                </div>
-                <div class="project-actions">
-                    <button>website</button>
-                    <button>github</button>
+            <div class="project-card-container">
+                <div class="project-card">
+                    <span class="project-label">programming</span>
+                    <h4>very cool uno</h4>
+                    <div class="project-body">
+                        <p>
+                            players get to create custom rooms, play with the classic uno deck, draw cards from the
+                            deck,
+                            use
+                            cards,
+                            and
+                            withdraw cards from the pile. there is a turn indicator, dark mode option, and admin mode
+                            for
+                            the
+                            user
+                            who
+                            created the room.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <button>website</button>
+                        <button>github</button>
+                    </div>
                 </div>
             </div>
             <div class="project-card">
@@ -73,7 +77,8 @@
                 <h4>studentvue mailer</h4>
                 <div class="project-body">
                     <p>
-                        an automation project that runs locally on user's computer, will check studentvue for new emails every set interval and forward new mail to personal inboxes.
+                        an automation project that runs locally on user's computer, will check studentvue for new emails
+                        every set interval and forward new mail to personal inboxes.
                     </p>
                 </div>
                 <div class="project-actions">
@@ -86,7 +91,8 @@
                 <h4>home studio</h4>
                 <div class="project-body">
                     <p>
-                        a 5-track ep featuring instrumental music that i composed over the summer. distributed onto platforms including amazon music, apple music, and spotify.
+                        a 5-track ep featuring instrumental music that i composed over the summer. distributed onto
+                        platforms including amazon music, apple music, and spotify.
                     </p>
                 </div>
                 <div class="project-actions">
@@ -99,7 +105,8 @@
                 <h4>math parser</h4>
                 <div class="project-body">
                     <p>
-                        a math parser that can solve nested parenthesis, multi-dimensional derivatives, and trigonometry. uses cache system to help some problems solve faster.
+                        a math parser that can solve nested parenthesis, multi-dimensional derivatives, and
+                        trigonometry. uses cache system to help some problems solve faster.
                     </p>
                 </div>
                 <div class="project-actions">
@@ -107,7 +114,29 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div class="circular-text"></div>
+            <span>raymond wang 2020</span>
+        </div>
     </div>
+    <script>
+        function circularText(txt, radius, classIndex) {
+            txt = txt.split("")
+            classIndex = document.querySelector(".circular-text");
+
+            var deg = 360 / txt.length;
+            var origin = 0;
+
+            txt.forEach(e => {
+                e =
+                    `<p style='height:${radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%'>${e}</p>`;
+                classIndex.innerHTML += e;
+                origin += deg;
+            });
+        }
+
+        circularText("raymond wang ", 30);
+    </script>
 </body>
 
 </html>
