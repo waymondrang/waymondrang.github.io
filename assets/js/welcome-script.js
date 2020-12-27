@@ -15,7 +15,7 @@ const colorPalette2 = ["#ff1744", "#f50057", "#d500f9", "#651fff", "#3d5afe", "#
 // css var declarations begin
 
 var transY = "translateY(".concat(0 - displacementY, "px)");
-console.log(transY);
+//console.log(transY);
 document.getElementById("name-container").style.transform = transY;
 
 let vh = window.innerHeight * 0.01;
@@ -25,7 +25,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 // if window is resized, recalulate --vh value
 window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
-  console.log(vh);
+  //console.log(vh);
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
@@ -39,10 +39,10 @@ $(".refresh").click(function () {
 
   function onTick() {
     const span = name.querySelectorAll('span')[char];
-    console.log(name.querySelectorAll('span')[char]);
+    //console.log(name.querySelectorAll('span')[char]);
 
     var randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
-    console.log(randomColor);
+    //console.log(randomColor);
 
     /*anime({
       targets: '.refreshIcon',
@@ -62,9 +62,9 @@ $(".refresh").click(function () {
   };
 });
 
-console.log("name detected: " + document.querySelector(".nameAnim").textContent); // log name to console
+console.log("name detected: " + document.querySelector("#animate").textContent); // log name to console
 
-const name = document.querySelector(".nameAnim");
+const name = document.querySelector("#animate");
 const nameLetters = name.textContent.split("");
 name.textContent = ""; // delete original h1 content after saving to name
 
@@ -79,14 +79,14 @@ function animateName() {
 
   function onTick() {
     const span = name.querySelectorAll('span')[char];
-    console.log(name.querySelectorAll('span')[char]);
+    //console.log(name.querySelectorAll('span')[char]);
 
     var randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
-    console.log(randomColor);
+    //console.log(randomColor);
 
     const opacityDuration = 100;
 
-    console.log(char);
+    //console.log(char);
 
     if (char % 2 == 0) {
       anime({
@@ -136,7 +136,7 @@ function animateName() {
 
 // debugging section
 
-if (debugMode == 0) {
+if (false) {
   window.onload = function () {
     var input = document.getElementById("debugMode");
     //var input = document.querySelector('input[type=checkbox]');
@@ -164,7 +164,7 @@ if (debugMode == 0) {
   };
 };
 
-if (debugMode == 1) {
+if (false) {
   $("*").css("border", "1px solid white");
   console.log("completed all debugging tasks");
 };
@@ -175,38 +175,14 @@ if (debugMode == 1) {
 
 $("span").click(function () {
   const randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
-  console.log(randomColor);
+  //console.log(randomColor);
   $(this).css("color", randomColor);
-});
-
-// bottom elements hover event handler (i refuse to use css hover)
-
-$(".hover").hover(function () {
-  type = this.nodeName;
-  console.log(type);
-  /*if (type == "svg") {
-    console.log("this is an svg");
-
-    originalColor = $(this).css("fill");
-    console.log(originalColor);
-
-    $(this).css("fill", "#696969") // transition to brighter color
-  }
-  console.log("this is not an svg");*/
-
-  originalColor = "#373737"; // no longer retrieving color from css attribute
-  console.log(originalColor);
-
-  $(this).css("color", "#696969") // transition to brighter color
-}, function () {
-  $(this).css("color", originalColor)
-  originalColor = null;
 });
 
 // more info section event handler
 
 function surprise() {
-  console.log("surprise!");
+  //console.log("surprise!");
 };
 
 // run functions

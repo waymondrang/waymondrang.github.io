@@ -10,9 +10,10 @@
   user-select: none;
 }
 
-a {
-  color:inherit;
-  text-decoration: none;
+svg {
+  fill: #fff;
+  height: 18px;
+  width: 18px;
 }
 
 .loader {
@@ -23,21 +24,21 @@ a {
   width: 100%;
   height: 100%;
   background-color: white;
-  color: black;
+  color: #000;
   font-family: helveticanow, Arial, Helvetica, sans-serif;
-  display: flex; /*let fonts load*/
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body {
+body, button {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   border-color: transparent;
   font-family: 'Major Mono Display', monospace;
-  color: white;
-  background: black;
+  color: #fff;
+  background: #000;
   overflow: hidden;
 }
 
@@ -45,26 +46,25 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh; /* height fallback */
+  height: 100vh;
+  /* HEIGHT FALLBACK */
   height: calc(var(--vh, 1vh) * 100);
   align-items: center;
   justify-content: center;
-  background-color: #111111;
+  background-color: #1b1b1b;
 }
 
 #name-container {
-  color: white;
+  color: #fff;
   font-size: 6vmin;
   letter-spacing: 0.25vmin;
   cursor: default;
-  color: yellow;
-  /* apply transform property via js */
+  color: #ffeb3b;
 }
 
-span {
+#name-container span {
   display: inline-block;
   opacity: 0;
-  /* transform: translateY(-40px); */
 }
 
 .debugMenu {
@@ -75,41 +75,58 @@ nav {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 2vmin;
   color: #ffffff;
+  width: 100%;
 }
 
-nav h2 {
-  margin: 1vmin;
-  font-family: helveticanow, Helvetica, sans-serif;
-}
-
-nav h2:hover {
-  color: yellow;
-  cursor: pointer;
+a, .refresh  {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 6px 12px;
+  border: 1px solid #cecece1a;
+  border-radius: 500px;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 8px 8px 0;
+  width: fit-content;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .refresh {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  background-color: transparent;
+  color: #cecece5a;
   position: absolute;
-  bottom: 4vmin;
-  right: 4vmin;
+  bottom: 24px;
+  right: 24px;
+}
+
+a svg {
+  margin-left: 8px;
+}
+
+a:hover, a:hover svg, .refresh:hover, a:focus, a:focus svg, .refresh:focus {
+  fill: #ffeb3b;
+  color: #ffeb3b;
   cursor: pointer;
-  font-size: 2vmin;
-  color: #373737;
-  transition: all 0.1s ease-in-out;
 }
 
-.refresh h3 {
-  margin: 0 1vmin 0 0; /* use when svg is displayed */
+a:hover, .refresh:hover, a:focus, .refresh:focus {
+  border: 4px solid #ffeb3b9a;
+  background-color: #ffeb3b1a;
 }
 
-.refresh svg {
-  display: none; /* the icon doesnt please my eye */
-  width: 3vmin;
-  height: auto;
-  fill: #373737;
-  transition: all 0.1s ease-in-out;
+@media (max-width: 500px) {
+  a {
+    padding: 10px 16px;
+    margin: 0 8px 8px 0;
+    font-size: 18px;
+  }
 }

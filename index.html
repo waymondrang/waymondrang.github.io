@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	<title>RAYMOND WANG HOME</title>
+	<title>RAYMOND WANG</title>
 
 	<link href="/assets/css/index.css" rel="stylesheet" type="text/css" />
 
@@ -21,51 +21,44 @@
 
 	<section class="top">
 
-		<div id="name-container">
-			<h1 class="nameAnim">RAYMOND WANG</h1>
-		</div>
+		<div>
+			<div id="name-container">
+				<h1 id="animate">RAYMOND WANG</h1>
+			</div>
 
-		<nav>
-			<div class="mograph">
+			<nav>
 				<a href="motiongraphics.html">
-					<h2>motion graphics</h2>
+					motion graphics
 				</a>
-			</div>
-			<div class="videography">
 				<a href="film.html">
-					<h2>videography</h2>
+					videography
 				</a>
-			</div>
-			<div class="music">
 				<a href="music.html">
-					<h2>discography</h2>
+					discography
 				</a>
-			</div>
-			<div class="about-me">
 				<a href="projects.html">
-					<h2>projects</h2>
+					projects
 				</a>
-			</div>
-			<div class="github">
 				<a href="https://github.com/waymondrang/">
-					<h2>github profile</h2>
+					<span>github profile</span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path
+							d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
+					</svg>
 				</a>
-			</div>
-		</nav>
-
-		<div class="refresh hover">
-			<h3>CHANGE COLORS</h3>
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="refreshIcon">
-				<path d="M13.5 2c-5.621 0-10.211 4.443-10.475 10h-3.025l5 6.625 5-6.625h-2.975c.257-3.351 3.06-6 6.475-6 3.584 0 6.5 2.916 6.5 6.5s-2.916 6.5-6.5 6.5c-1.863 0-3.542-.793-4.728-2.053l-2.427 3.216c1.877 1.754 4.389 2.837 7.155 2.837 5.79 0 10.5-4.71 10.5-10.5s-4.71-10.5-10.5-10.5z"
-				/>
-			</svg>
+			</nav>
 		</div>
+
+		<button class="refresh hover">
+			click me!
+		</button>
 
 		<div class="debugMenu">
 			<input type="checkbox" id="debugMode" name="debugMode">
-      <label for="debugMode">DEBUG MODE</label>  
-    </div>  
-    
+			<label for="debugMode">DEBUG MODE</label>
+		</div>
+
 	</section>
 
 	<script src="/assets/lib/anime.js">
@@ -79,4 +72,5 @@
 	</script>
 
 </body>
+
 </html>
