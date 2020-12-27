@@ -76,6 +76,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;    
   flex-wrap: wrap;
   font-size: 2vmin;
   color: #ffffff;
@@ -86,7 +87,7 @@ a, .refresh  {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  padding: 6px 12px;
+  padding: 0px 12px;
   border: 1px solid #cecece1a;
   border-radius: 500px;
   color: inherit;
@@ -121,6 +122,7 @@ a:hover, a:hover svg, .refresh:hover, a:focus, a:focus svg, .refresh:focus {
 a:hover, .refresh:hover, a:focus, .refresh:focus {
   border: 4px solid #ffeb3b9a;
   background-color: #ffeb3b1a;
+  padding: 0px 16px;
 }
 
 @media (max-width: 500px) {
