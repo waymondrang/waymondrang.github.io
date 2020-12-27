@@ -3,70 +3,93 @@
   src: url(/assets/fonts/helveticanowblack.otf);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 * {
-margin: auto;
-overflow: hidden;
-text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.back {
+  font-size: 12px;
+  border-radius: 500px;
+  padding: 2px 8px;
+  border: 1px solid #212121;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.header h1 {
+  margin: 4px 0 4px 0;
+}
+
+.header span {
+  font-size: 12px;
+}
+
+.about-site {
+  color: #808080;
 }
 
 .loader {
-z-index: 99;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: white;
-color: black;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-body {
-  font-family: HNB, Arial, Helvetica, sans-serif;
-  font-kerning: auto;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  margin-top: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
+  margin-top: 48px;
+  width: 80vw;
+  max-width: 1000px;
 }
 
-.container h3 {
+.thumbnail-container {
+  position: relative;
+  height: 36vh;
+  min-height: 320px;
+  border-radius: 5px;
+}
+
+.about {
   position: absolute;
-  color: white;
-  opacity: 0;
-  transition: 0.5s;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px;
+  width: 240px;
+  font-size: 12px;
+  font-family: monospace;
+  border: 1px solid #212121;
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  background-color: #2121219a;
+  color: #ebebeb;
+  font-weight: normal;
+
 }
 
 .container img {
-  z-index: -1;
-  position: relative;
-  width: 80vw;
-  height: 40vh;
-  display: flex;
-  border-radius: 5px;
-  transition: 0.5s cubic-bezier(0,0,0,1);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-}
-
-@media all and (max-width: 800px) {
-  .container h3 {
-    font-size: 15px;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .container h3 {
-    font-size: 20px;
-  }
-}
-
-.container:hover h3 {
-  opacity: 1;
+  border-radius: 5px;
 }

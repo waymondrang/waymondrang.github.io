@@ -22,117 +22,131 @@
 <body>
     <div class="container">
         <div class="header">
-            <a href="index.html"><button class="back">&lt; back</button></a>
+            <a href="index.html" tabindex="-1"><button class="back">&lt; back</button></a>
             <h1>projects</h1>
-            <span>several of my coolest projects</span>
+            <span>by raymond wang</span>
             <br />
-            <span class="last-updated">last updated 12-13-2020 (none of the links work yet)</span>
+            <span class="last-updated">some of my coolest projects</span>
         </div>
         <div class="project-container">
-            <div class="project-card-container">
-                <div class="project-card">
+            <div class="project-card">
+                <div class="project-page">
                     <span class="project-label">programming</span>
                     <h4>very cool uno</h4>
                     <div class="project-body">
                         <p>
-                            players get to create custom rooms, play with the classic uno deck, draw cards from the
-                            deck,
-                            use
-                            cards,
-                            and
-                            withdraw cards from the pile. there is a turn indicator, dark mode option, and admin mode
-                            for
-                            the
-                            user
-                            who
-                            created the room.
+                            a simple and free to play uno website featuring custom cards created by <a
+                                href="https://github.com/chiyeon">chiyeon</a>. hosted on heroku, the web app uses
+                            express, socket.io, react, and mongodb.
                         </p>
                     </div>
                     <div class="project-actions">
-                        <button>website</button>
-                        <button>github</button>
+                        <a href="https://very-cool-uno.herokuapp.com/" tabindex="-1"><button>play</button></a>
+                        <a href="https://github.com/waymondrang/very-cool-uno" tabindex="-1"><button>github</button></a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <span class="project-label">programming</span>
-                <h4>watch together</h4>
-                <div class="project-body">
-                    <p>
-                        watch videos together... blah blah blah. i will finish the description later.
-                    </p>
-                </div>
-                <div class="project-actions">
-                    <a href="https://github.com/waymondrang/watch-together/releases/download/v.a.9.0/watch.together.v9.zip"><button>download</button></a>
-                </div>
-            </div>
-            <div class="project-card">
-                <span class="project-label">programming</span>
-                <h4>online publishing platform</h4>
-                <div class="project-body">
-                    <p>
-                        registered users can write articles with formatting and images, save drafts, like other's
-                        articles,
-                        and customize their profile.
-                    </p>
-                </div>
-                <div class="project-actions">
-                    <button>visit website</button>
+                <div class="project-page">
+                    <span class="project-label">programming</span>
+                    <h4>watch together</h4>
+                    <div class="project-body">
+                        <p>
+                            a chrome extension that allows users to watch videos together in (near) real-time. uses
+                            socket.io and native javascript, works on any site with a <code>&lt;video&gt;</code>
+                            element.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a tabindex="-1"
+                            href="https://github.com/waymondrang/watch-together/releases/download/v.a.9.0/watch.together.v9.zip"><button>download</button></a>
+                        <a tabindex="-1"
+                            href="https://github.com/waymondrang/watch-together/"><button>github</button></a>
+                    </div>
                 </div>
             </div>
             <div class="project-card">
-                <span class="project-label">programming</span>
-                <h4>real time chat</h4>
-                <div class="project-body">
-                    <p>
-                        registered users can chat in a global channel and communicate with a server side "bot". includes
-                        simple commands including !lol, which will fetch league stats for a player.
-                    </p>
-                </div>
-                <div class="project-actions">
-                    <button>visit website</button>
-                </div>
-            </div>
-            <div class="project-card">
-                <span class="project-label">programming</span>
-                <h4>studentvue mailer</h4>
-                <div class="project-body">
-                    <p>
-                        an automation project that runs locally on user's computer, will check studentvue for new emails
-                        every set interval and forward new mail to personal inboxes.
-                    </p>
-                </div>
-                <div class="project-actions">
-                    <button>download</button>
-                    <button>view source code</button>
+                <div class="project-page">
+                    <span class="project-label">programming</span>
+                    <h4>online publishing platform</h4>
+                    <div class="project-body">
+                        <p>
+                            registered users can write articles with formatting and images, save drafts, like other's
+                            articles,
+                            and customize their profile.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://franklin-newspaper.appspot.com/" tabindex="-1"><button>visit
+                                website</button></a>
+                    </div>
                 </div>
             </div>
             <div class="project-card">
-                <span class="project-label">music</span>
-                <h4>home studio</h4>
-                <div class="project-body">
-                    <p>
-                        a 5-track ep featuring instrumental music that i composed over the summer. distributed onto
-                        platforms including amazon music, apple music, and spotify.
-                    </p>
-                </div>
-                <div class="project-actions">
-                    <button>spotify</button>
-                    <button>apple music</button>
+                <div class="project-page">
+                    <span class="project-label">programming</span>
+                    <h4>real time chat</h4>
+                    <div class="project-body">
+                        <p>
+                            registered users can chat in a global channel and communicate with a server side "bot".
+                            includes
+                            simple commands including !lol, which will fetch league stats for a player.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://chat-utility.herokuapp.com/" tabindex="-1"><button>visit website</button></a>
+                    </div>
                 </div>
             </div>
             <div class="project-card">
-                <span class="project-label">programming</span>
-                <h4>math parser</h4>
-                <div class="project-body">
-                    <p>
-                        a math parser that can solve nested parenthesis, multi-dimensional derivatives, and
-                        trigonometry. uses cache system to help some problems solve faster.
-                    </p>
+                <div class="project-page">
+                    <span class="project-label">programming</span>
+                    <h4>studentvue mailer</h4>
+                    <div class="project-body">
+                        <p>
+                            an automation project that runs locally on user's computer, will check studentvue for new
+                            emails
+                            every set interval and forward new mail to personal inboxes.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/waymondrang/studentvue-mailer" tabindex="-1"><button>view source code</button></a>
+                    </div>
                 </div>
-                <div class="project-actions">
-                    <button>github</button>
+            </div>
+            <div class="project-card">
+                <div class="project-page">
+                    <span class="project-label">music</span>
+                    <h4>home studio</h4>
+                    <div class="project-body">
+                        <p>
+                            a 5-track ep featuring instrumental music that i composed over the summer. distributed
+                            onto
+                            platforms including amazon music, apple music, and spotify.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://open.spotify.com/album/5ZNIqzMuVN6wga71FCVlW3?si=dnmr4vHfSLW4PfB_huIvXA" tabindex="-1"><button>spotify</button></a>
+                        <a href="https://music.apple.com/us/album/home-studio-ep/id1507152288" tabindex="-1"><button>apple music</button></a>
+                    </div>
                 </div>
+            </div>
+            <div class="project-card">
+                <div class="project-page">
+                    <span class="project-label">programming</span>
+                    <h4>math parser</h4>
+                    <div class="project-body">
+                        <p>
+                            a math parser that can solve nested parenthesis, multi-dimensional derivatives, and
+                            trigonometry. uses cache system to help some problems solve faster.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <button disabled>not published, yet</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card empty">
             </div>
         </div>
         <div class="footer">
